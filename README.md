@@ -1,10 +1,11 @@
-ExpNo 4 : Implement A* search algorithm for a Graph
-Name: Balaji N
-Register Number:2305002002
-Aim:
-To ImplementA * Search algorithm for a Graph using Python 3.
+<h1>ExpNo 4 : Implement A* search algorithm for a Graph</h1> 
+<h3>Name: Balaji N      </h3>
+<h3>Register Number:2305002002           </h3>
+<H3>Aim:</H3>
+<p>To ImplementA * Search algorithm for a Graph using Python 3.</p>
+<H3>Algorithm:</H3>
 
-Algorithm:
+
 Initialize:
 
 open_set = {start}, g[start] = 0, parents[start] = None.
@@ -21,9 +22,11 @@ Compute cost g[n] + weight.
 
 If better, update g[m], parents[m], add m to open_set.
 
-If loop ends without reaching goal → path doesn’t exist.
+If loop ends without reaching goal → path doesn’t exist.
 
-PROGRAM
+## PROGRAM
+```python
+
 graph, H = {}, {}
 def AStar(start, goal):
     open_set, g, parents = [start], {start:0}, {start:None}
@@ -48,10 +51,13 @@ for _ in range(e):
 for _ in range(n):
     node,h=input().split(); H[node]=int(h)
 AStar(input(),input())
-GRAPH
-WhatsApp Image 2025-10-06 at 13 57 02_c28f6507
+````
+## GRAPH 
 
-INPUT
+![WhatsApp Image 2025-10-06 at 13 57 02_c28f6507](https://github.com/user-attachments/assets/b0678931-ceff-48f9-8a10-b17fac51cb26)
+
+## INPUT
+```
 3 2
 A B 1
 B C 2
@@ -60,7 +66,16 @@ B 1
 C 0
 A
 C
-Output
-image
-RESULT:
+```
+## Output
+
+
+<img width="280" height="115" alt="image" src="https://github.com/user-attachments/assets/bf0ff3e6-0056-4260-b30a-db83dfbe70f7" />
+
+
+
+
+
+## RESULT:
+
 Thus, the program successfully finds the shortest path from the start node to the goal node using the A* algorithm.
